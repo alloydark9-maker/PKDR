@@ -46,12 +46,11 @@ Instead, it stores the knowledge required to rebuild your environment.
 
 # Installation
 
-Clone the repository (<version> eg. v1.0.1):
-> Recommendation: **Do not choose v1.0.0**
+Clone the repository:
 
 ```bash
-git clone https://github.com/alloydark9-maker/PKDR/<version> pkdr
-cd pkdr
+git clone https://github.com/alloydark9-maker/PKDR
+cd PKDR
 ```
 
 Run the installer:
