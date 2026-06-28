@@ -1,0 +1,19 @@
+[PKDR] Commands:
+ > pkdr import <env> (to import a specific environment)
+ > pkdr import --all (to import complete)
+ > pkdr export <env> (to export a specific environment)
+ > pkdr export --all (to export complete)
+ > pkdr add <env> <package> (to add specific package to specific environment)
+ > pkdr enter <env> (to enter inside a specific environment to use installed tools)
+ > pkdr install <env> (to initialize the specific environment)
+ > pkdr install -a (to initialize all environments)
+ > pkdr list (to view all available environments)
+ > pkdr show <env> (to show installed packages of the specific environment)
+ > pkdr -v | pkdr --version (to view the current pkdr version)
+ > pkdr update (to update pkdr)
+ > pkdr remove (to remove pkdr)
+
+[PKDR] Details:
+   PKDR is a termux utility built to presist the environment state to resume on any device, by saving it to a pkdr directory.
+   Developed by Nishit Samar (AlloyDark) — 2026
+    
