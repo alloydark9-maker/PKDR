@@ -1,0 +1,7 @@
+{
+  "name": "dev",
+  "init": false,
+  "packages": [
+    "git"
+  ]
+}
