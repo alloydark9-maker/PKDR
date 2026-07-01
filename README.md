@@ -45,6 +45,7 @@ Instead, it stores the knowledge required to rebuild your environment.
 ---
 
 # Installation
+> **Do not try change any command for correct installation**
 
 Clone the repository:
 
@@ -99,6 +100,32 @@ Think of it as a portable memory for your development setup.
 - Git synchronization
 - Automatic updates
 - Community environment registry
+
+---
+
+# VERSION
+
+Check VERSION for the correct current version.
+
+```
+    v[Architectural].[Major].[Minor]
+```
+
+## Component Definitions
+
+### 1. Architectural (vX.0.0)
+Incremented for foundational ecosystem changes or multi-language expansions.
+* **Example:** Transitioning a pure Bash codebase to a hybrid JavaScript/Python architecture.
+* **Example:** Porting the core system from a monolith to microservices.
+
+### 2. Major (v0.X.0)
+Incremented for significant internal logic or algorithm overhauls within the existing tech stack, without changing the base tools.
+* **Example:** Rewriting the core routing engine or replacing a legacy search algorithm with a high-performance alternative.
+* **Example:** Introducing efficient data exchanges.
+
+### 3. Minor (v0.0.X)
+Incremented for ongoing maintenance, code optimization, and structural refinement.
+* **Example:** Code modulation, refactoring clunky files, fixing bugs, or performance tuning.
 
 ---
 

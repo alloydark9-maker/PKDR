@@ -1,19 +1,29 @@
-[PKDR] Commands:
- > pkdr import <env> (to import a specific environment)
- > pkdr import --all (to import complete)
- > pkdr export <env> (to export a specific environment)
- > pkdr export --all (to export complete)
- > pkdr add <env> <package> (to add specific package to specific environment)
- > pkdr enter <env> (to enter inside a specific environment to use installed tools)
- > pkdr install <env> (to initialize the specific environment)
- > pkdr install -a (to initialize all environments)
- > pkdr list (to view all available environments)
- > pkdr show <env> (to show installed packages of the specific environment)
- > pkdr -v | pkdr --version (to view the current pkdr version)
- > pkdr update (to update pkdr)
- > pkdr remove (to remove pkdr)
+[PKDR] Package Keeper Directory Runtime
 
-[PKDR] Details:
-   PKDR is a termux utility built to presist the environment state to resume on any device, by saving it to a pkdr directory.
-   Developed by Nishit Samar (AlloyDark) — 2026
-    
+Usage:
+  pkdr <command> [options]
+
+Commands:
+  add <env> <package>      Add a package to an environment
+  remove <env> <package>   Remove a package from an environment
+  enter <env>              Enter an isolated environment
+  init <env>               Initialize an environment
+  init -a                  Initialize all environments
+  list                     List available environments
+  show <env>               Show packages in an environment
+  update                   Update PKDR
+  uninstall                Remove PKDR
+  export -a /path/to/      To export all environments
+  export <env> /path/to    To export a specific environment
+  import /path/to          To import your environment
+  -v, --version            Show version
+  --help                   Show this help page
+
+Description:
+  PKDR is a lightweight, open-source utility for Termux that
+  preserves and reconstructs development environments.
+
+  Save your setup once. Rebuild it anywhere.
+
+Developed by Nishit Samar (AlloyDark) — 2026
+
