@@ -37,21 +37,31 @@ Continue? (y/n):" yn
 pkdr_update() {
   echo "[PKDR] Updating pkdr..."
 
-  local root_dir="${PKDR_ROOT:-$HOME/.pkdr}"
+  local temp="$PKDR_ROOT/runtime/update"
+  local repo="https://github.com/alloydark9-maker/PKDR.git"
 
-  if [ -z "$root_dir" ] || [ "$root_dir" = "/" ]; then
-    echo "[PKDR] Error: Invalid PKDR_ROOT path!"
-    log_run -e "Failed to update PKDR to $VERSION" "events"
+  rm -rf "$temp"
+
+  if ! git clone --depth 1 "$repo" "$temp"; then
+    echo "[PKDR] Failed to fetch latest version."
+    log_run -e "Failed to fetch latest PKDR version" "events"
     return 1
   fi
 
-  rm -rf "$root_dir/core"
+  if cp -r "$temp/core" "$PKDR_ROOT/" &&
+     cp -r "$temp/utils" "$PKDR_ROOT/" &&
+     cp "$temp/VERSION" "$PKDR_ROOT/"; then
 
-  if cp -r ./core "$root_dir/" && cp -r ./utils "$root_dir/" && cp ./VERSION "$root_dir/"; then
-    echo "[PKDR] Updated successfully to $VERSION"
-    log_run -i "PKDR updated to latest version $VERSION" "events"
+    echo "[PKDR] Updated successfully to $(cat "$PKDR_ROOT/VERSION")"
+    log_run -i "PKDR updated successfully" "events"
+
   else
-    echo "[PKDR] Update failed during file copy!"
+    echo "[PKDR] Update failed."
+    log_run -e "Failed while replacing PKDR files" "events"
+
+    rm -rf "$temp"
     return 1
   fi
+
+  rm -rf "$temp"
 }
