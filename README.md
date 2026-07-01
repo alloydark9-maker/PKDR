@@ -45,8 +45,11 @@ Instead, it stores the knowledge required to rebuild your environment.
 ---
 
 # Installation
+
 > **Do not try change any command for correct installation**
 > **Do not dowload v1.0.0, as per that is broken**
+=======
+> **Do not try change any command for correct installation, Do not download v1.0.0, as per that is broken**
 
 Clone the repository:
 
