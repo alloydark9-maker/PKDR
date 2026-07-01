@@ -1,7 +1,8 @@
-# PKDR v1.0.0
+# PKDR v1.0.1
 
 ## Added
 
+- Fixed the broken installer from v1.0.0 (fast patch update)
 - Refined environment manifest system
 - Environment management (`add`, `init`, `enter`, `show`, `list`, `remove`)
 - Refined isolated runtime environments
@@ -11,9 +12,9 @@
 
 ## Known Issues
 
-- Primarily optimized for Termux (planned for v1.0.1)
-- Import/export implementation requires further optimization (planned for v1.0.1)
-- Currently limited to `pkg install` (planned for v1.0.1)
+- Primarily optimized for Termux (planned for v1.0.2)
+- Import/export implementation requires further optimization (planned for v1.0.2)
+- Currently limited to `pkg install` (planned for v1.0.2)
 - Internal modules are still being refined
 - Manual installation methods are not yet available (planned for v1.1.0)
 - Unrefined runtime logs (log_run)

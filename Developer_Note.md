@@ -18,7 +18,8 @@ Instead of becoming another wrapper around `pkg`, PKDR gradually became an envir
 
 Many parts of the project were redesigned multiple times before this first stable release. The architecture you're seeing today is the result of continuous experimentation, learning, and refinement rather than a fixed plan from the beginning.
 
-Version **1.0.0** represents the first stable foundation. The goal from here is not to continuously add features, but to improve reliability, portability, and maintainability while keeping the project simple to understand.
+Version **1.0.1** represents the first stable foundation. The goal from here is not to continuously add features, but to improve reliability, portability, and maintainability while keeping the project simple to understand.
+> Sorry for v1.0.0, I pushed in hurry, didn't verified the installer.sh but quickly realised and fixed in this patch update, so v1.0.1 is new and infact first stable version.
 
 ## Contributing
 
@@ -30,7 +31,7 @@ If you discover a bug, open an issue with clear reproduction steps. If you're pr
 
 ## Roadmap
 
-### v1.0.1
+### v1.0.X
 
 Focus: Stability and portability.
 
@@ -42,7 +43,7 @@ Focus: Stability and portability.
 * Strengthen validation and fallback behavior across commands.
 * General bug fixes and performance improvements.
 
-### v1.1.0
+### v1.X.0
 
 Focus: Better developer experience.
 
