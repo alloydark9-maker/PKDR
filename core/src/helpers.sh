@@ -38,6 +38,7 @@ const file='$file';
 
 const data={
   name:'$env',
+  init: false,
   packages:[]
 };
 
